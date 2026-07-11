@@ -1,0 +1,64 @@
+:root {
+    --color-azul: #2c70f5;
+    --color-amarillo: #f8ae00;
+    --color-verde: #1a9b3c;
+    --color-rojo: #e92e18;
+}
+
+.cuarto1 {
+    color: var(--color-azul);
+}
+
+.cuarto2 {
+    color: var(--color-amarillo);
+}
+
+.cuarto3 {
+    color: var(--color-verde);
+}
+
+.cuarto4 {
+    color: var(--color-rojo);
+}
+
+body {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cuarto-div h5{
+    margin: 0;
+}
+
+.cuarto-div {
+    
+}
+
+.cuartosContainer {
+    width: 50%;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.totalContainer {
+    height: 300px;
+}
+
+.totalContainer, .cuartosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#formGastos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

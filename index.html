@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos pedorros </title>
+
+    <!-- Preset CSS bahunya -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya@css/bahunya-0.1.3.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+    <h2 class="titulo">Calculadora de alquiler y expensas</h2>
+    
+    <main>
+        <form id="formGastos">
+
+            <!-- Contenedor de valores -->
+            <div class="totalContainer">
+
+                <div id="mesContainer">
+                    <label for="totalExpensas">Total Alquiler</label>
+                    <input type="number" id="totalAlquiler" value="0">
+                </div>
+
+                <div id="expensasContainer">
+                    <label for="totalExpensas">Total Expensas</label>
+                    <input type="number" id="totalExpensas" value="0">
+                </div>
+
+                <div>
+                    <button type="reset">Borrar todo</button>
+                </div>
+            </div>
+
+
+            <!-- Contenedor cuartos -->
+            <div class="cuartosContainer">
+                <!-- Cuarto 1 -->
+                <div class="cuarto-div">
+                    <h5 class="cuarto1">Cuarto 1</h5>
+                    <ul>
+                        <li>Alquiler 34,22%: <span class="cuarto1" id="alquiler1">0</span></li>
+                        <li>Expensas 25%: <span class="cuarto1" id="expensas1">0</span></li>
+                        <li>Total mes: <span class="cuarto1" id="total1">0</span></li>
+                    </ul>
+                </div>
+
+                <!-- Cuarto 2 -->
+                <div class="cuarto-div">
+                    <h5 class="cuarto2">Cuarto 2</h5>
+                    <ul>
+                        <li>Alquiler 17,97%: <span class="cuarto2" id="alquiler2">0</span></li>
+                        <li>Expensas 25%: <span class="cuarto2" id="expensas2">0</span></li>
+                        <li>Total mes: <span class="cuarto2" id="total2">0</span></li>
+                    </ul>
+                </div>
+
+                <!-- Cuarto 3 -->
+                <div class="cuarto-div">
+                    <h5 class="cuarto3">Cuarto 3</h5>
+                    <ul>
+                        <li>Alquiler 17,29%: <span class="cuarto3" id="alquiler3">0</span></li>
+                        <li>Expensas 25%: <span class="cuarto3" id="expensas3">0</span></li>
+                        <li>Total mes: <span class="cuarto3" id="total3">0</span></li>
+                    </ul>
+                </div>
+
+                <!-- Cuarto 4 -->
+                <div class="cuarto-div">
+                    <h5 class="cuarto4">Cuarto 4</h5>
+                    <ul>
+                        <li>Alquiler 30,52%: <span class="cuarto4" id="alquiler4">0</span></li>
+                        <li>Expensas 25%: <span class="cuarto4" id="expensas4">0</span></li>
+                        <li>Total mes: <span class="cuarto4" id="total4">0</span></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+        </form>
+    </main>
+    
+</body>
+</html>
