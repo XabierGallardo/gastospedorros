@@ -1,3 +1,6 @@
+/*========================
+    Selector elementos
+========================*/
 const formGastos = document.getElementById("formGastos");
 const totalAlquiler = document.getElementById("totalAlquiler");
 const totalExpensas = document.getElementById("totalExpensas");
@@ -18,15 +21,19 @@ const total3 = document.getElementById("total3");
 const total4 = document.getElementById("total4");
 
 
+
+// Evento tecla levantada
 formGastos.addEventListener("keyup", event => {
     
     let valorAlquiler = totalAlquiler.valueAsNumber;
     let valorExpensas = totalExpensas.valueAsNumber;
 
+    // Si es un numero y no es null, pasa a la funcion repartir gastos
     if(!isNaN(valorAlquiler) && valorAlquiler !== null && !isNaN(valorExpensas) && valorExpensas !== null) {
         repartirGastos(valorAlquiler, valorExpensas);
     }
 });
+
 
 function repartirGastos(alquiler, expensas) {
     let sumaExpensas = expensas * 25 / 100;
@@ -35,21 +42,22 @@ function repartirGastos(alquiler, expensas) {
     let sumaAlquiler2 = alquiler * 17.97 / 100;
     let sumaAlquiler3 = alquiler * 17.29 / 100;
     let sumaAlquiler4 = alquiler * 30.52 / 100;
-    
-    alquiler1.innerHTML = `$${sumaAlquiler1}`;
-    expensas1.innerHTML = `$${sumaExpensas}`;
-    total1.innerHTML = `$${sumaAlquiler1 + sumaExpensas}`;
 
-    alquiler2.innerHTML = `$${sumaAlquiler2}`;
-    expensas2.innerHTML = `$${sumaExpensas}`;
-    total2.innerHTML = `$${sumaAlquiler2 + sumaExpensas}`;
+    // toLocaleString agrega . como separador de miles (en formato local argentino)
+    alquiler1.innerHTML = `$${sumaAlquiler1.toLocaleString("es-AR")}`;
+    expensas1.innerHTML = `$${sumaExpensas.toLocaleString("es-AR")}`;
+    total1.innerHTML = `$${(sumaAlquiler1 + sumaExpensas).toLocaleString("es-AR")}`;
+
+    alquiler2.innerHTML = `$${sumaAlquiler2.toLocaleString("es-AR")}`;
+    expensas2.innerHTML = `$${sumaExpensas.toLocaleString("es-AR")}`;
+    total2.innerHTML = `$${(sumaAlquiler2 + sumaExpensas).toLocaleString("es-AR")}`;
     
 
-    alquiler3.innerHTML = `$${sumaAlquiler3}`;
-    expensas3.innerHTML = `$${sumaExpensas}`;
-    total3.innerHTML = `$${sumaAlquiler3 + sumaExpensas}`;
+    alquiler3.innerHTML = `$${sumaAlquiler3.toLocaleString("es-AR")}`;
+    expensas3.innerHTML = `$${sumaExpensas.toLocaleString("es-AR")}`;
+    total3.innerHTML = `$${(sumaAlquiler3 + sumaExpensas).toLocaleString("es-AR")}`;
     
-    alquiler4.innerHTML = `$${sumaAlquiler4}`;
-    expensas4.innerHTML = `$${sumaExpensas}`;
-    total4.innerHTML = `$${sumaAlquiler4 + sumaExpensas}`;
+    alquiler4.innerHTML = `$${sumaAlquiler4.toLocaleString("es-AR")}`;
+    expensas4.innerHTML = `$${sumaExpensas.toLocaleString("es-AR")}`;
+    total4.innerHTML = `$${(sumaAlquiler4 + sumaExpensas).toLocaleString("es-AR")}`;
 }

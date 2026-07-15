@@ -1,24 +1,26 @@
 :root {
+    --bg-negro: #0d1117;
     --color-azul: #2c70f5;
     --color-amarillo: #f8ae00;
     --color-verde: #1a9b3c;
     --color-rojo: #e92e18;
 }
 
-.cuarto1 {
-    color: var(--color-azul);
-}
+.cuarto1 { color: var(--color-azul); }
+.cuarto1-hr { border-color: var(--color-azul); }
 
-.cuarto2 {
-    color: var(--color-amarillo);
-}
+.cuarto2 { color: var(--color-amarillo); }
+.cuarto2-hr { border-color: var(--color-amarillo); }
 
-.cuarto3 {
-    color: var(--color-verde);
-}
+.cuarto3 { color: var(--color-verde); }
+.cuarto3-hr { border-color: var(--color-verde); }
 
-.cuarto4 {
-    color: var(--color-rojo);
+.cuarto4 { color: var(--color-rojo); }
+.cuarto4-hr { border-color: var(--color-rojo); }
+
+
+hr {
+    border-width: 2px;
 }
 
 body {
@@ -32,10 +34,6 @@ ul {
 
 .cuarto-div h5{
     margin: 0;
-}
-
-.cuarto-div {
-    
 }
 
 .cuartosContainer {
@@ -61,4 +59,79 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+/* =================================
+    Ocultar flechas input number 
+===================================*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield !important;
+}
+
+
+
+/* ====================
+    Media queries
+==================== */
+@media (max-width: 720px) {
+
+    #formGastos {
+        flex-direction: column;
+    }
+
+    .totalContainer {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        height: 270px;
+    }
+
+    .titulo {
+        font-size: 26px;
+    }
+
+    .cuartosContainer {
+        width: 60%;
+    }
+
+    .cuartosContainer li {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .titulo {
+        font-size: 22px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .cuartosContainer li {
+        font-size: 14px;
+    }
+
+    .totalContainer {
+        height: 230px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .cuartosContainer ul {
+        padding-left: 0;
+        margin-bottom: 15%;
+    }
 }
