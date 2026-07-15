@@ -88,6 +88,10 @@ input[type=number] {
 ==================== */
 @media (max-width: 720px) {
 
+    body {
+        margin-top: 7%;
+    }
+
     #formGastos {
         flex-direction: column;
     }
@@ -127,13 +131,5 @@ input[type=number] {
 
     .totalContainer {
         height: 230px;
-    }
-}
-
-
-@media (max-width: 390px) {
-    .cuartosContainer ul {
-        padding-left: 0;
-        margin-bottom: 15%;
     }
 }
