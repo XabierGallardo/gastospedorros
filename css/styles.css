@@ -76,7 +76,9 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield !important;
+    appearance: textfield !important;
+     /* Obsoleto pero brinda compatibilidad con navegadores antiguos */
+    -moz-appearance: textfield !important;
 }
 
 
