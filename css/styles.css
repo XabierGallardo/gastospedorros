@@ -26,6 +26,7 @@ hr {
 body {
     font-family: monospace;
     font-size: 18px;
+    margin-top: 0 !important;
 }
 
 ul {
@@ -98,7 +99,7 @@ input[type=number] {
 
     .totalContainer {
         margin-top: 5%;
-        margin-bottom: 10%;
+        margin-bottom: 2%;
         height: 270px;
     }
 
