@@ -24,9 +24,10 @@ hr {
 }
 
 body {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     margin-top: 0 !important;
+    margin-bottom: 0;
 }
 
 ul {
@@ -87,7 +88,7 @@ input[type=number] {
 /* ====================
     Media queries
 ==================== */
-@media (max-width: 720px) {
+@media (max-width: 805px) {
 
     body {
         margin-top: 7%;
@@ -105,6 +106,8 @@ input[type=number] {
 
     .titulo {
         font-size: 26px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     .cuartosContainer {
@@ -113,6 +116,10 @@ input[type=number] {
 
     .cuartosContainer li {
         font-size: 16px;
+    }
+
+    .cuartosContainer ul {
+        margin-top: 10px;
     }
 }
 
